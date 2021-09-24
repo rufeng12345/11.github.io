@@ -1,0 +1,248 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+a:hover{
+    text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size:0;
+}
+.clearfix { *zoom:1;}
+a{text-decoration: none;color:#000;}
+ul,li{list-style:none;}
+.container{
+    width: 1000px;
+    padding: 0;
+}
+.price .arrow{
+    background: url(../images/icon.png) no-repeat;
+}
+
+
+.position{
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+.position a,.position span{
+    font-size: 13px;
+    color: #666;
+}
+.main a:hover{
+    color: #000;
+}
+
+.list-nav{
+    width: 840px;
+}
+.list-nav>ul>li{
+    float: left;
+    padding: 6px 20px 5px 0px;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+}
+.list-nav ul>li>a{
+    display: block;
+    line-height: 24px;
+    width: 64px;
+    font-size: 13px;
+}
+.list-nav>ul>li>ul{
+    display: none;
+    top: 36px;
+    width: 1000px;
+    position: absolute;
+    z-index: 999999;
+    border: 1px solid #ededed;
+    padding: 25px 14px;
+    background-color: #fff;
+}
+.list-nav>ul>li>ul>li{
+    float: left;
+    height: 12px;
+    margin: 15px;
+    padding-right: 10px;
+}
+.price{
+    width: 142px;
+    text-align: right;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    float: right;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.price>span{
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 6px 20px 5px 0px;
+}
+.price .arrow{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 12px;
+    height: 20px;
+    background-position: -188px -385px;
+}
+.price:hover ul{
+    display: block;
+}
+.price:hover .arrow{
+    transform: rotateZ(180deg);
+    transition: all .5s;
+}
+.price>ul{
+    display: none;
+    width: 95px;
+    position: absolute;
+    z-index: 100000;
+    right: 0px;
+    top: 36px;
+    border: 1px solid #ededed;
+    background: #fff;
+}
+.price>ul>li>a{
+    display: block;
+    padding: 0px 10px;
+    width: 95px;
+    height: 39px;
+    color: #666;
+    border-bottom: 1px solid #ededed;
+    line-height: 39px;
+    text-align: left;
+    font-size: 13px;
+    margin-right: 0;
+}
+.price>ul>li:hover a{
+    background: #333;
+    color: #fff;
+}
+
+.shop-list>div{
+    margin-top: 20px;
+}
+.shop-list>div>div{
+    float: left;
+    width: 316px;
+    position: relative;
+    margin: 0px 0px 30px 26px;
+}
+.shop-list>div>div:nth-child(3n-2){
+    margin-left: 0;
+}
+.shop-list a{
+    color: #878787;
+    font-size: 14px;
+}
+.shop-list>div>div>a{
+    display: block;
+    width: 316px;
+    height: 316px;
+}
+.shop-list>div>div>a>img{
+    width: 100%;
+}
+.shop-list .info{
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.shop-list .info p{
+    margin: 0px auto;
+    text-align: center;
+    color: #fff;
+    width: 85%;
+    height: 25px;
+    line-height: 20px;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+.shop-list .info .money{
+    color: #0c6eba;
+    font-size: 20px;
+    margin-top: 4px;
+    text-align: left;
+}
+.shop-list .info .tle{
+    margin-top: 80px;
+}
+.shop-list .info .desc {
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 5px;
+    height: auto;
+}
+
+.shop-list .bar{
+    margin-top: 10px;
+    width: 316px;
+}
+.shop-list .bar .who>img{
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding: 0px 6px 6px 0px;
+}
+.shop-list .bar .heart{
+    float: right;
+    padding-right: 30px;
+    line-height: 28px;
+    background: url(../images/heart_gray20_18.png) no-repeat right center;
+}
+.shop-list .more>a{
+    height: 50px;
+    margin: 90px auto 0;
+    width: 148px;
+    cursor: pointer;
+    display: block;
+    background-position: 0 -640px;
+}
+.shop-list .more>a:hover{
+    background-position: 0 -688px;
+}
+@media screen and (max-width:1000px){
+    .container{
+        width: 90%;
+    }
+    .shop-list{
+        margin-bottom: 100px;
+    }
+    .shop-list>div>div{
+        margin: 0 auto;
+        float: none;
+    }
+    .shop-list>div>div:nth-child(3n-2) {
+        margin: 0 auto;
+    }
+    .list-nav{
+        width: 100%;
+    }
+    .price{
+        display: none;
+    }
+}
